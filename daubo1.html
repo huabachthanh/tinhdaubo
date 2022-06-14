@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<table border="1" cellpadding="0" cellspacing="0">
+    <div class="card" style="width: 20% ;float: left; margin-right: 20px; ">
+        <img src="./Images/2.jpg" class="card-img-top" width="100%">
+        <div class="card-body">
+          <h1 class="card-title">Tinh dầu bơ nguyên chất </h1>
+          <p class="card-text">200.000đ</p>
+        <button class="btn btn-danger">Mua</button>
+        </div>
+      </div>
+
+      
+      
+ 
+     
+     
+     
+      
+   <h1> <marquee align="center" direction="left" behaviors="alternate" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+       CÁC SẢN PHẨM NỔI BẬT 
+    </marquee></h1> 
+        
+        
+       
+       
+      </table>
+      <h1>Thêm sản phẩm</h1>
+
+      <input type="text" id="title" value=""/> 
+      <input type="button" id="button_add" onclick="add_element()" value="Add"/>
+
+      <div id="result"></div>
+</body>
+<script language="javascript">
+  function add_element(){
+      var title = document.getElementById('title').value;
+      if (title == ''){
+          alert("Bạn chưa nhập tiêu đề");
+      }
+      else {
+          var html = '<div style="background:red; margin: 5px; padding:5px; color:#FFF">'+title+'</div>';
+          document.getElementById('result').insertAdjacentHTML('afterend', html);
+      }
+  }
+</script>
+</html>
+
